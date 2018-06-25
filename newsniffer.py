@@ -36,7 +36,7 @@ while True:
     dest_MAC_arp = arp_detailed[7]
     dest_IP = arp_detailed[8]
 
-    if dest_MAC == b'\xff\xff\xff\xff\xff\xff' or opcode == b'\x00\x02':
+    if opcode == b'\x00\x01':
 
 
         print ("****************_ETHERNET_FRAME_****************")
